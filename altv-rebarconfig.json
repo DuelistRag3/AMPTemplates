@@ -1,1 +1,19 @@
-[]
+[
+    {
+        "DisplayName": "Server Name",
+        "Category": "Alt:V Server Settings",
+        "Description": "Setting the Servers Name",
+        "Keywords": "server,name",
+        "FieldName": "",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "AMP Powered Server",
+        "Placeholder": "AMP Powered Server",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    }
+]

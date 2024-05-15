@@ -1,9 +1,10 @@
 {
-	"id": "5d8d080e-2278-44cc-b9b5-167e120829e2",
-	"authors": ["CubeCoders Limited", "AMP Community", "DuelistRage"],
-	"origin": "https://github.com/DuelistRag3/AMPTemplates.git",
-	"url": "https://github.com/DuelistRag3/AMPTemplates",
-	"imagefile": "",
-	"prefix": "dtv",
-	"repotype": "AppTemplates"
+    "id": "d46b21f0-a062-4192-98fd-6dcae2b8de5f",
+    "authors": [
+        "DuelistRage"
+    ],
+    "origin": "https://github.com/DuelistRage - Made with AMP Config Generator/AMPTemplates.git",
+    "url": "https://github.com/DuelistRage - Made with AMP Config Generator/AMPTemplates",
+    "imagefile": "",
+    "prefix": "DuelistRage"
 }
