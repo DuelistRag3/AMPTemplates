@@ -9,11 +9,14 @@
         "OverwriteExistingFiles": true
     },
     {
-        "UpdateStageName":"Unpack Server Files",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"Executable",
-        "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'unzip altv-rebar.zip -d ${{FullBaseDir}}",
-        "SkipOnFailure":false
+        "UpdateStageName": "Extracting Serverfiles",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceArgs": "./altv-rebar.zip",
+        "UpdateSourceTarget": "${{FullBaseDir}}",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
     }
 ]
