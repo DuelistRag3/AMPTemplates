@@ -1,12 +1,12 @@
 [
     {
-        "UpdateStageName": "Downloading Server Files from Github",
+        "UpdateStageName": "Downloading Rebar Server Files from Github",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "GithubRelease",
         "UpdateSourceData": "altv-rebar.zip",
         "UpdateSourceArgs": "Stuyk/rebar-altv",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
         "DeleteAfterExtract": true,
         "OneShot": false
     },
