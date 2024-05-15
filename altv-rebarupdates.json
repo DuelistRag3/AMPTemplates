@@ -1,55 +1,35 @@
 [
     {
-        "UpdateStageName": "Downloading Node Version Manager installer",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh",
-        "UpdateSourceTarget": "./requirements/nvm-sh/",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": false,
-        "OneShot": true
-    },
-    {
-        "UpdateStageName": "Make Node Verion Manager installer executable",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "SetExecutableFlag",
-        "UpdateSourceArgs": "./altv-rebar/requirements/nvme-sh/install.sh",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "",
-        "UpdateSourceConditionValue": "",
-        "DeleteAfterExtract": true,
-        "OneShot": true
-    },
-    {
-        "UpdateStageName": "Excuting Node Version Manager Installer",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "./altv-rebar/requirements/nvm-installer.sh",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": true
-    },
-    {
-        "UpdateStageName": "Install NodeJS 20 via nvm",
+        "UpdateStageName": "Downloading Server Files from Github",
         "UpdateSourcePlatform": "All",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "nvm install 20",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceData": "altv-rebar.zip",
+        "UpdateSourceArgs": "Stuyk/rebar-altv",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Downloading requirements installer",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceData": "requierements.zip",
+        "UpdateSourceArgs": "DuelistRag3/Rebar-requierements-sh",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
         "OneShot": true
     },
     {
-        "UpdateStageName": "Installing pnpm via npm",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "npm install -g pnpm",
+        "UpdateStageName": "Extract ServerFiles",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "ExtractArchive",
+        "UpdateSourceArgs": "./altv-rebar/altv-rebar.zip",
+        "UpdateSourceTarget": "./serverfiles/",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
-        "OneShot": true
+        "OneShot": false
     }
 ]
