@@ -1,9 +1,9 @@
 {
-	"id": "ec280171-c67b-4cf8-923f-dc27fea91ee1",
-	"authors": ["CubeCoders Limited", "AMP Community"],
-	"origin": "https://github.com/CubeCoders/AMPTemplates.git",
-	"url": "https://github.com/CubeCoders/AMPTemplates",
+	"id": "5d8d080e-2278-44cc-b9b5-167e120829e2",
+	"authors": ["CubeCoders Limited", "AMP Community", "DuelistRage"],
+	"origin": "https://github.com/DuelistRag3/AMPTemplates.git",
+	"url": "https://github.com/DuelistRag3/AMPTemplates",
 	"imagefile": "",
-	"prefix": "",
+	"prefix": "dtv",
 	"repotype": "AppTemplates"
 }
