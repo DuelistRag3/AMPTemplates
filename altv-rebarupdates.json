@@ -1,33 +1,11 @@
 [
     {
         "UpdateStageName": "Downloading Server Files from Github",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceData": "altv-rebar.zip",
-        "UpdateSourceArgs": "DuelistRag3/rebar-altv",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true,
-        "OneShot": false
-    },
-    {
-        "UpdateStageName": "Making requirements.sh executable",
         "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "SetExecutableFlag",
-        "UpdateSourceArgs": "requirements.sh",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
-    },
-    {
-        "UpdateStageName": "Execute requirements.sh",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "./altv-rebar/serverfiles/requirements.sh",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceArgs": "DuelistRag3/rebar-altv",
+        "UpdateSourceData": "altv-rebar.zip",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true
     }
 ]
