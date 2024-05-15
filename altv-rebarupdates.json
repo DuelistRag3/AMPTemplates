@@ -7,5 +7,21 @@
         "UpdateSourceData": "altv-rebar.zip",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true
+    },
+    {
+        "UpdateStageName":"Getting Unzip",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'apt-get install unzip",
+        "SkipOnFailure":false
+    },
+    {
+        "UpdateStageName":"Unpack Server Files",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'unzip altv-rebar.zip -d ${{FullBaseDir}}",
+        "SkipOnFailure":false
     }
 ]
