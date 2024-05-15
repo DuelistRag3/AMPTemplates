@@ -5,9 +5,9 @@
         "UpdateSource": "GithubRelease",
         "UpdateSourceData": "altv-rebar.zip",
         "UpdateSourceArgs": "Stuyk/rebar-altv",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
-        "DeleteAfterExtract": true,
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": false,
         "OneShot": false
     }
 ]
