@@ -11,17 +11,6 @@
         "OneShot": false
     },
     {
-        "UpdateStageName": "Downloading requirements installer",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceData": "requierements.zip",
-        "UpdateSourceArgs": "DuelistRag3/Rebar-requierements-sh",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": true
-    },
-    {
         "UpdateStageName": "Extract ServerFiles",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "ExtractArchive",
