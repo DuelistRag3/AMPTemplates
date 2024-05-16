@@ -3,8 +3,8 @@
         "UpdateStageName":"Server Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"GithubRelease",
-        "UpdateSourceArgs":"DuelistRag3/rebar-altv",
-        "UpdateSourceData":"rebar.zip",
+        "UpdateSourceArgs":"DuelistRag3/rebar-v-AMP",
+        "UpdateSourceData":"rebar-altv.zip",
         "UpdateSourceTarget":"{{$FullRootDir}}",
         "OverwriteExistingFiles":true
     },
