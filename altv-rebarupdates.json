@@ -6,7 +6,25 @@
         "UpdateSourceArgs": "DuelistRag3/rebar-altv",
         "UpdateSourceData": "rebar.zip",
         "UnzipUpdateSource":true,
+        "UpdateSourceTarget":"${{FullBaseDir}}",
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true
+    },
+    {
+        "UpdateStageName":"Node.js Download",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://nodejs.org/download/release/{{NodeVersion}}/node-{{NodeVersion}}-linux-x64.tar.gz",
+        "UpdateSourceArch":"x86_64",
+        "UpdateSourceTarget":"{{$FullBaseDir}}"
+    },
+    {
+        "UpdateStageName":"Node.js Extract",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'cd foundry-vtt && rm -Rf node >/dev/null 2>&1 && tar xf node-{{NodeVersion}}-linux-x64.tar.gz && mv node-{{NodeVersion}}-linux-x64 node && rm node-{{NodeVersion}}-linux-x64.tar.gz'",
+        "UpdateSourceArch":"x86_64",
+        "SkipOnFailure":false
     }
 ]
