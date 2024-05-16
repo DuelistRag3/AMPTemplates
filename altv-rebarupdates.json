@@ -4,19 +4,9 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "GithubRelease",
         "UpdateSourceArgs": "DuelistRag3/rebar-altv",
-        "UpdateSourceData": "altv-rebar.zip",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true
-    },
-    {
-        "UpdateStageName": "Extracting Serverfiles",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "ExtractArchive",
-        "UpdateSourceArgs": "./altv-rebar.zip",
-        "UpdateSourceTarget": "${{FullBaseDir}}",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "UpdateSourceData": "${{FullBaseDir}}",
+        "UnzipUpdateSource":true,
+        "OverwriteExistingFiles":true,
+        "DeleteAfterExtract":true
     }
 ]
