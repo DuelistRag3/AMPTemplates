@@ -3,7 +3,7 @@
         "UpdateStageName":"Server Download",
         "UpdateSourcePlatform":"All",
         "UpdateSource":"GithubRelease",
-        "UpdateSourceArgs":"stuyk/rebar-altv",
+        "UpdateSourceArgs":"DuelistRag3/rebar-altv",
         "UpdateSourceData":"rebar.zip",
         "UpdateSourceTarget":"{{$FullRootDir}}",
         "OverwriteExistingFiles":true
