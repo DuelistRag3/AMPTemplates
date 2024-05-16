@@ -1,12 +1,12 @@
 [
     {
-        "UpdateStageName":"Downloading Server Files from Github",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://github.com/DuelistRag3/rebar-altv/archive/refs/tags/v1.1.zip",
-        "UpdateSourceArgs":"rebar.zip",
-        "UpdateSourceTarget":"serverfiles/",
-        "OverwriteExistingFiles":false
+        "UpdateStageName":"Server Download",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"GithubRelease",
+        "UpdateSourceArgs":"stuyk/rebar-altv",
+        "UpdateSourceData":"rebar.zip",
+        "UpdateSourceTarget":"{{$FullRootDir}}",
+        "OverwriteExistingFiles":true
     },
     {
         "UpdateStageName":"Extract Server Files",
