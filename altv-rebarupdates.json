@@ -1,11 +1,18 @@
 [
     {
-        "UpdateStageName": "Downloading Server Files from Github",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceArgs": "DuelistRag3/rebar-altv",
-        "UpdateSourceData": "rebar.zip",
-        "UnzipUpdateSource":true,
+        "UpdateStageName":"Downloading Server Files from Github",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"FetchURL",
+        "UpdateSourceData":"https://github.com/DuelistRag3/rebar-altv/archive/refs/tags/v1.1.zip",
+        "UpdateSourceArgs":"rebar.zip",
+        "UpdateSourceTarget":"serverfiles/",
+        "OverwriteExistingFiles":false
+    },
+    {
+        "UpdateStageName":"Extract Server Files",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"ExtractArchive",
+        "UpdateSourceData":"rebar.zip",
         "UpdateSourceTarget":"serverfiles/",
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true
