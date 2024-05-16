@@ -4,7 +4,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "GithubRelease",
         "UpdateSourceArgs": "DuelistRag3/rebar-altv",
-        "UpdateSourceData": "rebar.zip",
+        "UpdateSourceData": "${{FullBaseDir}}rebar.zip",
         "UnzipUpdateSource":true,
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true
