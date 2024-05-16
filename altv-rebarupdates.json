@@ -12,7 +12,7 @@
         "UpdateStageName":"Extract Server Files",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"ExtractArchive",
-        "UpdateSourceData":"rebar.zip",
+        "UpdateSourceData":"rebar-altv.zip",
         "UpdateSourceTarget":"serverfiles/",
         "OverwriteExistingFiles":true,
         "DeleteAfterExtract":true
