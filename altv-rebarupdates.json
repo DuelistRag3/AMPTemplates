@@ -1,37 +1,10 @@
 [
     {
         "UpdateStageName":"Server Download",
-        "UpdateSourcePlatform":"All",
-        "UpdateSource":"GithubRelease",
-        "UpdateSourceArgs":"DuelistRag3/rebar-v-AMP",
-        "UpdateSourceData":"rebar-altv.zip",
-        "UpdateSourceTarget":"{{$FullRootDir}}",
-        "OverwriteExistingFiles":true
-    },
-    {
-        "UpdateStageName":"Extract Server Files",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"ExtractArchive",
-        "UpdateSourceData":"rebar-altv.zip",
-        "UpdateSourceTarget":"serverfiles/",
-        "OverwriteExistingFiles":true,
-        "DeleteAfterExtract":true
-    },
-    {
-        "UpdateStageName":"Node.js Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://nodejs.org/download/release/{{NodeVersion}}/node-{{NodeVersion}}-linux-x64.tar.gz",
-        "UpdateSourceArch":"x86_64",
-        "UpdateSourceTarget":"{{$FullBaseDir}}"
-    },
-    {
-        "UpdateStageName":"Node.js Extract",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"Executable",
-        "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'cd foundry-vtt && rm -Rf node >/dev/null 2>&1 && tar xf node-{{NodeVersion}}-linux-x64.tar.gz && mv node-{{NodeVersion}}-linux-x64 node && rm node-{{NodeVersion}}-linux-x64.tar.gz'",
-        "UpdateSourceArch":"x86_64",
-        "SkipOnFailure":false
+        "UpdateSourceData":"https://raw.githubusercontent.com/DuelistRag3/rebar-amp-installer/main/installer.sh",
+        "UpdateSourceTarget":"{{$FullRootDir}}",
+        "OverwriteExistingFiles":true
     }
 ]
