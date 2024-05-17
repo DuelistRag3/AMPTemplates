@@ -29,5 +29,37 @@
         "DefaultValue":"v20.13.1",
         "Placeholder":"v20.13.1",
         "EnumValues":{}
+    },
+    {
+        "DisplayName":"npm Install Type",
+        "Category":"Node - Settings",
+        "Description":"Specify \"npm i\" to use a packages.json or specify \"npm ci\" to use a packages-lock.json. If \"Specific Packages\" is chosen you must enter the packages in the \"Specific npm Packages\" input.",
+        "Keywords":"npm,install,type",
+        "FieldName":"NpmInstallType",
+        "InputType":"enum",
+        "IsFlagArgument":false,
+        "ParamFieldName":"NpmInstallType",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"specify",
+        "EnumValues":{
+            "none":"None",
+            "npmci":"npm ci",
+            "npmi":"npm i",
+            "specify":"Specific Packages"
+        }
+    },
+    {
+        "DisplayName":"Specific npm Packages",
+        "Category":"Node - Settings",
+        "Description":"Specify any additional npm packages to install separated by a space. Select \"Specific Packages\" for the \"npm Install Type\".",
+        "Keywords":"additional,npm,packages",
+        "FieldName":"NpmPackages",
+        "InputType":"text",
+        "IsFlagArgument":false,
+        "ParamFieldName":"NpmPackages",
+        "IncludeInCommandLine":false,
+        "DefaultValue":"pnpm",
+        "Placeholder":"express fastify socket.io",
+        "EnumValues":{}
     }
 ]
