@@ -56,5 +56,21 @@
         "UpdateSourceConditionSetting":"NpmInstallType",
         "UpdateSourceConditionValue":"npmci",
         "SkipOnFailure":false
+    },
+    {
+        "UpdateStageName":"Install Rebar Dependencies",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd \"{{$FullBaseDir}}\" && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/pnpm\" install'",
+        "SkipOnFailure":false
+    },
+    {
+        "UpdateStageName":"Install AltV Binaries",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'export PATH=$PATH:{{$FullBaseDir}}node/bin && cd \"{{$FullBaseDir}}\" && \"{{$FullBaseDir}}node/bin/node\" \"{{$FullBaseDir}}node/bin/pnpm\" binaries'",
+        "SkipOnFailure":false
     }
 ]
