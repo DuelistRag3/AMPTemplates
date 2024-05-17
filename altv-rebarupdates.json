@@ -16,7 +16,7 @@
         "UpdateSourceArch":"x86_64",
         "UpdateSource":"Executable",
         "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'apt-get install build-essential'",
+        "UpdateSourceArgs":"-c 'sudo apt-get install build-essential'",
         "SkipOnFailure":false
     },
     {
