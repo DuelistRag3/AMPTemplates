@@ -11,15 +11,6 @@
         "DeleteAfterExtract":true
     },
     {
-        "UpdateStageName":"Install build-essentials",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSourceArch":"x86_64",
-        "UpdateSource":"Executable",
-        "UpdateSourceData":"/bin/bash",
-        "UpdateSourceArgs":"-c 'sudo apt-get install build-essential'",
-        "SkipOnFailure":false
-    },
-    {
         "UpdateStageName":"Node.js Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSourceArch":"x86_64",
