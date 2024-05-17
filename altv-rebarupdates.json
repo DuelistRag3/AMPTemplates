@@ -1,10 +1,20 @@
 [
     {
         "UpdateStageName":"Server Download",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"FetchURL",
-        "UpdateSourceData":"https://raw.githubusercontent.com/DuelistRag3/rebar-amp-installer/main/installer.sh",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"GithubRelease",
+        "UpdateSourceArgs":"DuelistRag3/rebar-v-AMP",
+        "UpdateSourceData":"rebar-altv.zip",
         "UpdateSourceTarget":"{{$FullRootDir}}",
         "OverwriteExistingFiles":true
+    },
+    {
+        "UpdateStageName":"Extract Server Files",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"ExtractArchive",
+        "UpdateSourceData":"${{FullRootDir}}rebar-altv.zip",
+        "UpdateSourceTarget":"serverfiles/",
+        "OverwriteExistingFiles":true,
+        "DeleteAfterExtract":true
     }
 ]
