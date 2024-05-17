@@ -2,6 +2,6 @@
     {
         "ConfigFile": ".env",
         "ConfigType": "",
-        "AutoMap": true
+        "AutoMap": false
     }
 ]
